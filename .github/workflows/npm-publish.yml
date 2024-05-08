@@ -18,6 +18,11 @@ jobs:
         with:
           node-version: '18.x'
 
+      - name: Deploy to hosting service
+        run: |
+          npm install -g now
+          now --token ${{ secrets.NOW_TOKEN }} --prod
+
       - name: Install dependencies
         run: npm install
 
@@ -31,4 +36,4 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./out # Change this to the directory where your Next.js app is exported
+          publish_dir: ./output # Change this to the directory where your Next.js app is exported
