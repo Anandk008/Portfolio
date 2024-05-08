@@ -4,7 +4,7 @@
 
 ---
 
-## View live preview [here](https://my-github-portfolio.netlify.app/)
+## View live preview [here](https://anandk008.netlify.app/)
 
 ---
 
