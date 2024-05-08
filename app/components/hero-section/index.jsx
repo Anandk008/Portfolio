@@ -5,8 +5,9 @@ import Image from "next/image";
 import Link from "next/link";
 import { BsGithub, BsLinkedin } from "react-icons/bs";
 import { FaFacebook, FaTwitterSquare } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa6";
 import { MdDownload } from "react-icons/md";
-import { SiLeetcode } from "react-icons/si";
+import { SiCodechef, SiGeeksforgeeks, SiLeetcode } from "react-icons/si";
 
 function HeroSection({ profile }) {
 
@@ -47,7 +48,7 @@ function HeroSection({ profile }) {
               target='_blank'
               className="transition-all text-teal-500 hover:scale-125 duration-300"
             >
-              <FaFacebook size={24} />
+              <FaInstagram size={24} />
             </Link>
             <Link
               href={userData.leetcode}
@@ -57,11 +58,18 @@ function HeroSection({ profile }) {
               <SiLeetcode size={24} />
             </Link>
             <Link
-              href={userData.twitter}
+              href={userData.codeChef}
               target='_blank'
               className="transition-all text-teal-500 hover:scale-125 duration-300"
             >
-              <FaTwitterSquare size={24} />
+              <SiCodechef size={24} />
+            </Link>
+            <Link
+              href={userData.geeksforGeeks}
+              target='_blank'
+              className="transition-all text-teal-500 hover:scale-125 duration-300"
+            >
+              <SiGeeksforgeeks size={24} />
             </Link>
           </div>
 
