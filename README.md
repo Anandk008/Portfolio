@@ -4,11 +4,6 @@
 
 ---
 
-# Demo :movie_camera:
-
-![httpsgithub abusaid me](https://github.com/said7388/github-portfolio/assets/77630868/a331f996-1b4d-451a-941f-a15f5ae6de93)
-
-
 ## View live preview [here](https://my-github-portfolio.netlify.app/)
 
 ---
@@ -36,7 +31,7 @@ git --version
 To Fork the repo click on the fork button at the top right of the page. Once the repo is forked open your terminal and perform the following commands
 
 ```
-git clone https://github.com/<YOUR GITHUB USERNAME>/github-portfolio.git
+git clone https://github.com/anandk008/github-portfolio.git
 
 cd github-portfolio
 ```
@@ -71,35 +66,23 @@ Eg:
 NEXT_PUBLIC_GTM = ""
 ```
 
-### Now, you have to customize user data in the `data` [folder](https://github.com/said7388/developer-portfolio/tree/main/data).
+### Now, you have to customize user data in the `data` [folder](https://github.com/anandk008/developer-portfolio/tree/main/data).
 
 Eg:
 
 ```javascript
 export const userData = {
-  githubUser: "said7388",
-  devUsername: "said7388",
-  github: "https://github.com/said7388",
-  facebook: "https://www.facebook.com/abusaid.riyaz/",
-  linkedIn: "https://www.linkedin.com/in/abu-said-bd/",
-  twitter: "https://twitter.com/said7388",
-  stackOverflow: "https://stackoverflow.com/users/16840768/abu-said",
-  leetcode: "https://leetcode.com/said3812/",
-  resume:
-    "https://drive.google.com/file/d/1eyutpKFFhJ9X-qpQGKhUNnVRkB5Wer00/view?usp=sharing",
-  skills: [
-    "React",
-    "NextJS",
-    "Redux",
-    "Express",
-    "NestJS",
-    "MySql",
-    "MongoDB",
-    "Postgres",
-    "Docker",
-    "AWS",
-  ],
-  timezone: "+6",
+  githubUser: 'anandk008',
+  devUsername: "anandk008",
+  github: 'https://github.com/anandk008',
+  instagram: 'https://www.instagram.com/anand_kadale_/',
+  linkedIn: 'https://www.linkedin.com/in/anandk008/',
+  geeksforGeeks: 'https://auth.geeksforgeeks.org/user/anandk008',
+  codeChef: 'https://codechef.com/users/anand_008',
+  leetcode: "https://leetcode.com/anand_008/",
+  resume: "https://drive.google.com/file/d/1GXKQoVyiLu8i-OX1fEhaai7j9K_6nW0t/view?usp=sharing",
+  skills: ['C','C++','HTML', 'CSS','JavaScript', 'NodeJS', 'ReactJS', 'Git', 'GoLang', 'Python', 'Docker', 'Kubernetes'],
+  timezone: '+5'
 };
 ```
 
