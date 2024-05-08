@@ -1,4 +1,4 @@
-name: Deploy to GitHub Pages
+name: Deploy Next.js App to GitHub Pages
 
 on:
   push:
@@ -6,17 +6,26 @@ on:
       - main # Change this to the branch you want to deploy from
 
 jobs:
-  build:
+  deploy:
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
 
-      - name: Install dependencies and build
-        run: |
-          npm install
-          npm run build
+      - name: Setup Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '14'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build Next.js app
+        run: npm run build
+
+      - name: Export Next.js app
+        run: npm run export
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
